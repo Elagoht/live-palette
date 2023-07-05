@@ -9,7 +9,7 @@ const Controller: React.FC = () => {
   return <>
     <div className="colFirst">
       <form>
-        <div className="flex gap-8 p-4 min-[1160px]:justify-center over overflow-x-auto">
+        <div>
           <ColorSelector toManage={colors.colFirst} manageHandler={handleColFirst} />
           <ColorSelector toManage={colors.colSecond} manageHandler={handleColSecond} />
           <ColorSelector toManage={colors.colThird} manageHandler={handleColThird} />
