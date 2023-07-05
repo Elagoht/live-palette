@@ -10,7 +10,7 @@ const Design: React.FC = () => {
     <header className="colFirst">
       <div>
         <div>
-          <Palette size={48} strokeWidth={1.5} /> Color Ipsum
+          <Palette size={48} strokeWidth={1.5} /> Live Palette!
         </div>
         <nav>
           <a>Lorem</a>
