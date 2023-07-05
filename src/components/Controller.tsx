@@ -8,12 +8,14 @@ const Controller: React.FC = () => {
 
   return <>
     <div className="colFirst">
-      <form className="flex gap-4 p-4 justify-center flex-wrap">
-        <ColorSelector toManage={colors.colFirst} manageHandler={handleColFirst} />
-        <ColorSelector toManage={colors.colSecond} manageHandler={handleColSecond} />
-        <ColorSelector toManage={colors.colThird} manageHandler={handleColThird} />
-        <ColorSelector toManage={colors.colFourth} manageHandler={handleColFourth} />
-        <ColorSelector toManage={colors.colFifth} manageHandler={handleColFifth} />
+      <form>
+        <div className="flex gap-8 p-4 min-[1160px]:justify-center over overflow-x-auto">
+          <ColorSelector toManage={colors.colFirst} manageHandler={handleColFirst} />
+          <ColorSelector toManage={colors.colSecond} manageHandler={handleColSecond} />
+          <ColorSelector toManage={colors.colThird} manageHandler={handleColThird} />
+          <ColorSelector toManage={colors.colFourth} manageHandler={handleColFourth} />
+          <ColorSelector toManage={colors.colFifth} manageHandler={handleColFifth} />
+        </div>
       </form>
     </div>
   </>
