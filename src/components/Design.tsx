@@ -42,7 +42,7 @@ const Design: React.FC = () => {
         <main>
           <article>
             <section>
-              <h1 className="colFifth">Lorem Ipsum COLOR Sit Amet</h1>
+              <h1 className="colFifth">Lorem Ipsum <span id="rainbow">Color</span> Sit Amet</h1>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, perspiciatis quod. Cupiditate sequi id debitis consequuntur!</p>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto rem, cupiditate quam fugit dolor consequuntur qui deleniti illum ipsam. Accusamus quaerat suscipit dignissimos maxime.</p>
               <h2 className="colFifth">Lorem ipsum Dolor Sit Amet</h2>
