@@ -4,7 +4,7 @@ import { setTextColor } from "../utilities/textColors"
 
 const Style: React.FC = () => {
 
-  const colors = useSelector((store: RootState) => store.Colors)
+  const colors = useSelector((store: RootState) => store.colors)
 
   return <style>{`
   body { background-color: ${colors.colSecond}; color: ${setTextColor(colors.colSecond)}; }

@@ -16,7 +16,7 @@ const initialState: IColors = {
   colFifth: localStorage["colFifth"] ? localStorage["colFifth"] : "rgb(207, 24, 109)",
 }
 
-const Colors = createSlice({
+const colors = createSlice({
   name: "colors",
   initialState,
   reducers: {
@@ -34,6 +34,6 @@ export const {
   setColThird,
   setColFourth,
   setColFifth,
-} = Colors.actions
+} = colors.actions
 
-export default Colors.reducer
+export default colors.reducer

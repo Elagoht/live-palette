@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit"
-import Colors from "./Colors"
+import colors from "./colors"
+import modal from "./modals"
 
 const store = configureStore({
     reducer: {
-        Colors
+        colors,
+        modal
     }
 })
 

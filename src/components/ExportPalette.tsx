@@ -6,7 +6,7 @@ import { rgbToHex, rgbToHsl, rgbToHsv } from "../utilities/translateColors"
 
 const ExportPalette: React.FC = () => {
 
-  const appColors = useSelector((store: RootState) => store.Colors)
+  const appColors = useSelector((store: RootState) => store.colors)
 
   const downloadPalette = () => {
 

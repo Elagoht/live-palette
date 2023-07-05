@@ -1,15 +1,11 @@
 import { Save } from "lucide-react"
-import { useSelector } from "react-redux"
-import { RootState } from "../stores"
-
+import { OpenModal } from "../stores/hooks"
+import { saveModal } from "../utilities/modalTypes"
 
 const SavePalette: React.FC = () => {
 
-  const colors = useSelector((store: RootState) => store.Colors)
-
   const saveColors: () => void = () => {
-    if (!window.confirm("This action will perform overwrite your existing palette. Still want to continue?")) return
-    localStorage.setItem("SavedColors", JSON.stringify(colors))
+    OpenModal(saveModal)
   }
 
   return <button className="colThird colFourth" onClick={saveColors}>

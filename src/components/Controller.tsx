@@ -4,7 +4,7 @@ import { handleColFifth, handleColFirst, handleColFourth, handleColSecond, handl
 import ColorSelector from "./ColorSelector"
 const Controller: React.FC = () => {
 
-  const colors = useSelector((store: RootState) => store.Colors)
+  const colors = useSelector((store: RootState) => store.colors)
 
   return <>
     <div className="colFirst">
