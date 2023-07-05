@@ -1,4 +1,8 @@
-import { ArrowRight, Github, Image, Paintbrush, Palette } from "lucide-react"
+import { Github, Image, Paintbrush, Palette } from "lucide-react"
+import ClearPalette from "./ClearPalette"
+import ExportPalette from "./ExportPalette"
+import SavePalette from "./SavePalette"
+import LoadPalette from "./LoadPalette"
 
 const Design: React.FC = () => {
 
@@ -53,9 +57,10 @@ const Design: React.FC = () => {
         </main>
         <aside>
           <nav>
-            <a className="colThird colFourth"><ArrowRight className="colFifth" />Lorem ipsum dolor sit</a>
-            <a className="colThird colFourth"><ArrowRight className="colFifth" />Lorem ipsum dolor sit</a>
-            <a className="colThird colFourth"><ArrowRight className="colFifth" />Lorem ipsum dolor sit</a>
+            <ClearPalette />
+            <ExportPalette />
+            <SavePalette />
+            <LoadPalette />
           </nav>
         </aside>
       </div>
