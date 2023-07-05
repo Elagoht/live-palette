@@ -11,16 +11,14 @@ const ExportPalette: React.FC = () => {
   const downloadPalette = () => {
 
     // Convert palette to array
-    const colors = Array.from(Object.values(appColors))
+    const colors = Array.from(Array.from(new Set(Object.values(appColors))))
 
     // Create canvas to draw on
     const canvas = document.createElement("canvas")
     const context = canvas.getContext('2d') as CanvasRenderingContext2D
-    canvas.width = 1000;
-    canvas.height = 200;
-
-    // Palette square settings
-    const squareSize = 200;
+    const squareSize = 200
+    canvas.width = colors.length * squareSize
+    canvas.height = squareSize
     const spacing = (canvas.width - squareSize * colors.length) / (colors.length + 1)
 
     // Draw colors on canvas
