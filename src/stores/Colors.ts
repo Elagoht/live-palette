@@ -9,11 +9,11 @@ export interface IColors {
 }
 
 const initialState: IColors = {
-  colFirst: localStorage["colFirst"] ? localStorage["colFirst"] : "#323232",
-  colSecond: localStorage["colSecond"] ? localStorage["colSecond"] : "#323232",
-  colThird: localStorage["colThird"] ? localStorage["colThird"] : "#323232",
-  colFourth: localStorage["colFourth"] ? localStorage["colFourth"] : "#323232",
-  colFifth: localStorage["colFifth"] ? localStorage["colFifth"] : "#323232",
+  colFirst: localStorage["colFirst"] ? localStorage["colFirst"] : "rgb(38, 38, 38)",
+  colSecond: localStorage["colSecond"] ? localStorage["colSecond"] : "rgb(196, 196, 196)",
+  colThird: localStorage["colThird"] ? localStorage["colThird"] : "rgb(238, 238, 238)",
+  colFourth: localStorage["colFourth"] ? localStorage["colFourth"] : "rgb(255, 153, 53)",
+  colFifth: localStorage["colFifth"] ? localStorage["colFifth"] : "rgb(207, 24, 109)",
 }
 
 const Colors = createSlice({

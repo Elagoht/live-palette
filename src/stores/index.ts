@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit"
 import Colors from "./Colors"
+import Clipboard from "./Clipboard"
 
 const store = configureStore({
     reducer: {
-        Colors
+        Colors,
+        Clipboard
     }
 })
 

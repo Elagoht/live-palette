@@ -8,8 +8,7 @@ const Style: React.FC = () => {
     return parseInt(color.split(",")[2].replace("%)", ""))
   }
   const setTextColor: (light: number) => string = (light: number) => {
-    console.log(light)
-    return (light < 50) ? "white" : "black"
+    return (light < 70) ? "white" : "black"
   }
 
   const colors = useSelector((store: RootState) => store.Colors)
@@ -17,10 +16,10 @@ const Style: React.FC = () => {
   return <style>{`
   body { background-color: ${colors.colSecond}; color: ${setTextColor(getLight(colors.colSecond))}; }
   .colFirst { background-color: ${colors.colFirst}; color: ${setTextColor(getLight(colors.colFirst))}; }
-  .colSecond { background-color: ${colors.colSecond}; }
-  .colThird { background-color: ${colors.colThird}; }
-  .colFourth { border-color: ${colors.colFourth}; color: ${colors.colFourth}; }
-  .colFifth { border-color: ${colors.colFourth}; color: ${colors.colFifth}; }
+  .colSecond { background-color: ${colors.colSecond}; color: ${setTextColor(getLight(colors.colSecond))};}
+  .colThird { background-color: ${colors.colThird};  color: ${setTextColor(getLight(colors.colThird))};}
+  .colFourth { border-color: ${colors.colFourth}; }
+  .colFifth { color: ${colors.colFifth}; }
 `}</style>
 }
 
