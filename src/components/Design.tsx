@@ -4,11 +4,11 @@ const Design: React.FC = () => {
 
   return <>
     <header className="shadow-md colFirst">
-      <div className="container flex items-center justify-between px-4">
+      <div className="container flex items-center justify-between px-4 max-sm:flex-col">
         <div className="text-3xl flex items-center gap-4">
           <Palette size={48} strokeWidth={1.5} /> Color Ipsum
         </div>
-        <nav className="flex">
+        <nav className="flex flex-wrap">
           <a className="h-16 flex items-center px-2">Lorem</a>
           <a className="h-16 flex items-center px-2">Ipsum</a>
           <a className="h-16 flex items-center px-2">Dolor</a>
@@ -18,7 +18,7 @@ const Design: React.FC = () => {
       </div>
     </header>
     <div className="container p-12">
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4">
         <div className="mt-10 border-b-4 colThird colFourth p-4 rounded-lg shadow-md flex flex-col items-center gap-2">
           <div className="-mt-12 colFourth colThird p-2 rounded-full">
             <Palette className="colFifth" size={50} strokeWidth={1.25} />
