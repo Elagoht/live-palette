@@ -7,3 +7,56 @@
     @apply mx-auto max-w-5xl
   }
 }
+@layer components {
+  header {
+    @apply shadow-md;
+  }
+  header > div {
+    @apply container flex items-center justify-between px-4 max-sm:flex-col;
+  }
+  header div div {
+    @apply text-3xl flex items-center gap-4;
+  }
+  header nav {
+    @apply flex flex-wrap justify-center;
+  }
+  header nav a {
+    @apply h-16 flex items-center px-2 font-bold;
+  }
+  body header ~ div {
+    @apply container p-4;
+  }
+  body header ~ div > div:nth-child(1) {
+    @apply grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-4;
+  }
+  body header ~ div > div:nth-child(1) > div {
+    @apply mt-10 border-b-4 p-4 rounded-lg shadow-md flex flex-col items-center gap-2 last:max-lg:col-span-2 last:max-sm:col-span-1;
+  }
+  body header ~ div > div:nth-child(1) > div > div {
+    @apply -mt-12 p-2 rounded-full;
+  }
+  body header ~ div > div:nth-child(2) {
+    @apply flex max-md:flex-col-reverse gap-8 mt-10;
+  }
+  main {
+    @apply grow;
+  }
+  section {
+    @apply grid gap-4;
+  }
+  h1 {
+    @apply text-2xl font-bold;
+  }
+  p {
+    @apply first-letter:ml-8;
+  }
+  aside {
+    @apply md:w-64 flex-shrink-0;
+  }
+  aside nav {
+    @apply grid gap-y-2;
+  }
+  aside nav a {
+    @apply border-b-4 p-2 shadow-md rounded-lg flex items-center gap-2;
+  }
+}

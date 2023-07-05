@@ -1,61 +1,61 @@
-import { ArrowRight, Github, Image, Palette } from "lucide-react"
+import { ArrowRight, Github, Image, Paintbrush, Palette } from "lucide-react"
 
 const Design: React.FC = () => {
 
   return <>
-    <header className="shadow-md colFirst">
-      <div className="container flex items-center justify-between px-4 max-sm:flex-col">
-        <div className="text-3xl flex items-center gap-4">
+    <header className="colFirst">
+      <div>
+        <div>
           <Palette size={48} strokeWidth={1.5} /> Color Ipsum
         </div>
-        <nav className="flex flex-wrap">
-          <a className="h-16 flex items-center px-2">Lorem</a>
-          <a className="h-16 flex items-center px-2">Ipsum</a>
-          <a className="h-16 flex items-center px-2">Dolor</a>
-          <a className="h-16 flex items-center px-2">Sit</a>
-          <a className="h-16 flex items-center px-2">Amet</a>
+        <nav>
+          <a>Lorem</a>
+          <a>Ipsum</a>
+          <a>Dolor</a>
+          <a>Sit</a>
+          <a>Amet</a>
         </nav>
       </div>
     </header>
-    <div className="container p-12">
-      <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4">
-        <div className="mt-10 border-b-4 colThird colFourth p-4 rounded-lg shadow-md flex flex-col items-center gap-2">
-          <div className="-mt-12 colFourth colThird p-2 rounded-full">
-            <Palette className="colFifth" size={50} strokeWidth={1.25} />
+    <div>
+      <div>
+        <div className="colThird colFourth">
+          <div className="colFourth colThird">
+            <Paintbrush className="colFifth" size={50} strokeWidth={1.25} />
           </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa earum eos minima tenetur sequi? Tempore, sit ipsum. Fuga, doloremque corrupti.</p>
         </div>
-        <div className="mt-10 border-b-4 colThird colFourth p-4 rounded-lg shadow-md flex flex-col items-center gap-2">
-          <div className="-mt-12 colFourth colThird p-2 rounded-full">
+        <div className="colThird colFourth">
+          <div className="colFourth colThird">
             <Github className="colFifth" size={50} strokeWidth={1.25} />
           </div>
           <p>Star this repository on Github. Uhmm actually mean lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
         </div>
-        <div className="mt-10 border-b-4 colThird colFourth p-4 rounded-lg shadow-md flex flex-col items-center gap-2">
-          <div className="-mt-12 colFourth colThird p-2 rounded-full">
+        <div className="colThird colFourth">
+          <div className="colFourth colThird">
             <Image className="colFifth" size={50} strokeWidth={1.25} />
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eligendi totam cumque iste illo quia quidem ut vitae.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam porro mollitia totam sint consectetur ratione fugiat, alias similique voluptatum voluptate fugit, amet consequuntur dolorem corporis suscipit repellat quibusdam!</p>
         </div>
       </div>
-      <div className="flex max-md:flex-col-reverse gap-8 mt-10">
-        <main className="grow">
+      <div>
+        <main>
           <article>
-            <section className="grid gap-4">
-              <h1 className="colFifth text-2xl font-bold">Lorem Ipsum COLOR Sit Amet</h1>
-              <p className="first-letter:ml-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, perspiciatis quod. Cupiditate sequi id debitis consequuntur!</p>
-              <p className="first-letter:ml-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto rem, cupiditate quam fugit dolor consequuntur qui deleniti illum ipsam. Accusamus quaerat suscipit dignissimos maxime.</p>
-              <h2 className="colFifth text-2xl font-bold">Lorem ipsum Dolor Sit Amet</h2>
-              <p className="first-letter:ml-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem hic est sed explicabo quaerat!</p>
-              <p className="first-letter:ml-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis soluta corporis numquam sequi architecto, aut reiciendis eaque dolor dolorum debitis laborum quisquam culpa unde ut quod. Soluta illo rerum in magnam molestiae quidem sequi. Praesentium laborum fugiat explicabo quasi harum cum vel sed possimus!</p>
+            <section>
+              <h1 className="colFifth">Lorem Ipsum COLOR Sit Amet</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, perspiciatis quod. Cupiditate sequi id debitis consequuntur!</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto rem, cupiditate quam fugit dolor consequuntur qui deleniti illum ipsam. Accusamus quaerat suscipit dignissimos maxime.</p>
+              <h2 className="colFifth">Lorem ipsum Dolor Sit Amet</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem hic est sed explicabo quaerat!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis soluta corporis numquam sequi architecto, aut reiciendis eaque dolor dolorum debitis laborum quisquam culpa unde ut quod. Soluta illo rerum in magnam molestiae quidem sequi. Praesentium laborum fugiat explicabo quasi harum cum vel sed possimus!</p>
             </section>
           </article>
         </main>
-        <aside className="md:w-64 flex-shrink-0">
-          <nav className="grid gap-y-2">
-            <a className="colThird colFourth border-b-4 p-2 shadow-md rounded-lg flex items-center gap-2"><ArrowRight className="colFifth" />Lorem ipsum dolor sit</a>
-            <a className="colThird colFourth border-b-4 p-2 shadow-md rounded-lg flex items-center gap-2"><ArrowRight className="colFifth" />Lorem ipsum dolor sit</a>
-            <a className="colThird colFourth border-b-4 p-2 shadow-md rounded-lg flex items-center gap-2"><ArrowRight className="colFifth" />Lorem ipsum dolor sit</a>
+        <aside>
+          <nav>
+            <a className="colThird colFourth"><ArrowRight className="colFifth" />Lorem ipsum dolor sit</a>
+            <a className="colThird colFourth"><ArrowRight className="colFifth" />Lorem ipsum dolor sit</a>
+            <a className="colThird colFourth"><ArrowRight className="colFifth" />Lorem ipsum dolor sit</a>
           </nav>
         </aside>
       </div>
