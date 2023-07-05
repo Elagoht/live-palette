@@ -18,11 +18,11 @@ const ColorSelector: React.FC<ColorSelector> = ({ toManage, manageHandler }) => 
   const [HEX, setHEX] = useState(false)
 
   const translateToHex: (color: string) => string = (color) => {
-    const values: number[] = color
+    const values: [number, number, number] = color
       .replace("rgb(", "")
       .replace(")", "")
-      .split(",")
-      .map(Number)
+      .split(",", 3)
+      .map(Number) as [number, number, number]
     return convert.rgb.hex(values)
   }
 
