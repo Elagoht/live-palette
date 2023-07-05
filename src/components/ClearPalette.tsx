@@ -10,6 +10,7 @@ const ClearPalette: React.FC = () => {
     handleColThird("rgb(238, 238, 238)")
     handleColFourth("rgb(255, 153, 53)")
     handleColFifth("rgb(207, 24, 109)")
+    location.reload()
   }
 
   return <button onClick={clearLocalStorage} className="colThird colFourth">

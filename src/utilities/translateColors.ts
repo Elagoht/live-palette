@@ -19,3 +19,7 @@ export const rgbToHsl: (color: string) => string = (color) => {
 export const rgbToHsv: (color: string) => string = (color) => {
   return "hsv(" + convert.rgb.hsv(splitRgbToArray(color)) + ")"
 }
+
+export const hexToRgb: (color: string) => string = (color) => {
+  return "rgb(" + convert.hex.rgb(color).toString() + ")"
+}

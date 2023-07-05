@@ -73,7 +73,7 @@
     @apply grid gap-y-2;
   }
   aside nav button {
-    @apply border-b-4 p-2 shadow-md rounded-lg flex items-center gap-2;
+    @apply border-b-4 p-2 shadow-md rounded-lg flex items-center gap-2 hover:scale-105 transition-transform;
   }
   form > div {
     @apply flex gap-8 p-4 max-w-[1160px] mx-auto overflow-x-auto;
