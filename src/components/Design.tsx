@@ -100,7 +100,11 @@ const Design: React.FC = () => {
         </aside>
       </div>
     </div>
-    <footer>
+    <motion.footer
+      initial="hidden"
+      animate="visible"
+      variants={animPosition}
+    >
       <div className="colThird colFourth col">
         This website created by <a
           href="https://furkanbaytekin.dev"
@@ -108,7 +112,7 @@ const Design: React.FC = () => {
             href="https://github.com/Elagoht"
             target="_blank" rel="noreferrer" >Elagoht</a>.
       </div>
-    </footer>
+    </motion.footer>
   </>
 }
 
