@@ -1,5 +1,5 @@
 import store from "../stores"
-import { CloseModal, handleColFifth, handleColFirst, handleColFourth, handleColSecond, handleColThird } from "../stores/hooks"
+import { CloseModal, OpenModal, handleColFifth, handleColFirst, handleColFourth, handleColSecond, handleColThird } from "../stores/hooks"
 import { IModal } from "../stores/modals"
 
 export const clearModal: IModal = {
@@ -39,7 +39,12 @@ export const loadModal: IModal = {
   functions: [
     CloseModal,
     () => {
-      if (localStorage.getItem("SavedColors") === undefined) return
+      console.log(localStorage.getItem("SavedColors"))
+      if (localStorage.getItem("SavedColors") === null) {
+        CloseModal()
+        OpenModal(nothingSavedModal)
+        return
+      }
       const colors = JSON.parse(localStorage.getItem("SavedColors") as string)
       handleColFirst(colors.colFirst)
       handleColSecond(colors.colSecond)
@@ -49,4 +54,11 @@ export const loadModal: IModal = {
       location.reload()
     }
   ]
+}
+
+const nothingSavedModal: IModal = {
+  title: "Nothing To Load",
+  message: "There's nothing to load, you should save one to load.",
+  options: ["Okay"],
+  functions: [CloseModal]
 }
