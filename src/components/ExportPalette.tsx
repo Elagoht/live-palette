@@ -3,6 +3,8 @@ import { useSelector } from "react-redux"
 import { RootState } from "../stores"
 import { setTextColor } from "../utilities/textColors"
 import { rgbToHex, rgbToHsl, rgbToHsv } from "../utilities/translateColors"
+import { motion } from "framer-motion"
+import { animOpacity } from "../animations"
 
 const ExportPalette: React.FC = () => {
 
@@ -50,10 +52,13 @@ const ExportPalette: React.FC = () => {
     a.click();
   }
 
-  return <button className="colThird colFourth" onClick={downloadPalette}>
+  return <motion.button
+    variants={animOpacity}
+    className="colThird colFourth" onClick={downloadPalette}
+  >
     <Download className="colFifth" />
     Download color palette.
-  </button>
+  </motion.button>
 }
 
 export default ExportPalette

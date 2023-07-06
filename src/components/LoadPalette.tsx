@@ -1,6 +1,8 @@
 import { ArrowUpToLine } from "lucide-react"
 import { OpenModal } from "../stores/hooks"
 import { loadModal } from "../utilities/modalTypes"
+import { motion } from "framer-motion"
+import { animOpacity } from "../animations"
 
 const LoadPalette: React.FC = () => {
 
@@ -8,10 +10,13 @@ const LoadPalette: React.FC = () => {
     OpenModal(loadModal)
   }
 
-  return <button className="colThird colFourth" onClick={loadColors}>
+  return <motion.button
+    variants={animOpacity}
+    className="colThird colFourth" onClick={loadColors}
+  >
     <ArrowUpToLine className="colFifth" />
     Load color palette.
-  </button>
+  </motion.button>
 }
 
 export default LoadPalette

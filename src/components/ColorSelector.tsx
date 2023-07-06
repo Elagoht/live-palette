@@ -1,8 +1,10 @@
-import { ClipboardCopy, ClipboardPaste, Clipboard, ClipboardCheck, ClipboardPasteIcon } from "lucide-react"
+import { Clipboard, ClipboardCheck } from "lucide-react"
 import { RgbStringColorPicker } from "react-colorful"
 import { RefObject, useRef, useState } from "react"
 import { hexToRgb, rgbToHex } from "../utilities/translateColors"
 import { validateHex, validateHexInput } from "../utilities/colorValidators"
+import { motion } from "framer-motion"
+import { animPosition } from "../animations"
 
 type ColorSelector = {
   toManage: string,
@@ -46,7 +48,10 @@ const ColorSelector: React.FC<ColorSelector> = ({ toManage, manageHandler }) => 
     manageHandler(color)
   }
 
-  return <div className="flex flex-col gap-2">
+  return <motion.div
+    variants={animPosition}
+    className="flex flex-col gap-2"
+  >
     <RgbStringColorPicker className="col-span-2" color={toManage} onChange={onChange} />
 
     <div className="flex items-center gap-2">
@@ -62,7 +67,7 @@ const ColorSelector: React.FC<ColorSelector> = ({ toManage, manageHandler }) => 
         </div>
       </div>
     </div>
-  </div>
+  </motion.div>
 }
 
 export default ColorSelector

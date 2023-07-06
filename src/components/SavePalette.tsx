@@ -1,6 +1,8 @@
 import { Save } from "lucide-react"
 import { OpenModal } from "../stores/hooks"
 import { saveModal } from "../utilities/modalTypes"
+import { motion } from "framer-motion"
+import { animOpacity } from "../animations"
 
 const SavePalette: React.FC = () => {
 
@@ -8,10 +10,13 @@ const SavePalette: React.FC = () => {
     OpenModal(saveModal)
   }
 
-  return <button className="colThird colFourth" onClick={saveColors}>
+  return <motion.button
+    variants={animOpacity}
+    className="colThird colFourth" onClick={saveColors}
+  >
     <Save className="colFifth" />
     Save color palette.
-  </button>
+  </motion.button>
 }
 
 export default SavePalette
