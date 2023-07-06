@@ -102,7 +102,7 @@ const Design: React.FC = () => {
     </div>
     <footer>
       <div className="colThird colFourth col">
-        This web site created by <a
+        This website created by <a
           href="https://furkanbaytekin.dev"
           target="_blank" rel="noreferrer" >Furkan Baytekin</a> a.k.a. <a
             href="https://github.com/Elagoht"

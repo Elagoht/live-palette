@@ -1,14 +1,12 @@
 # Live Palette!
 
-When a designer choosed/created a color palette and then applied it to their web design, the might not like that palette.
+I have developed a website called Live Palette that allows designers to visualize and modify their color palettes for web design. Sometimes designers may not be satisfied with the color palette they initially chose or created because it doesn't harmonize well with their website design.
 
-The palette was good, but did not fit with the site they design.
+With Live Palette, designers can apply their color palette to a template website and instantly see how it looks in real-time. This live preview feature enables them to make immediate color changes and observe the results.
 
-So, I have create this web site to see your color palette on a template website as you changed your colors. Watch the changes live!
+Additionally, designers have the option to download the color palette as a card image for reference or further use.
 
-Also you can download the palette as a card image.
-
-Here is some examples:
+Take a look at some examples:
 
 <div align="center">
 
