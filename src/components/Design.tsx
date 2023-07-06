@@ -55,7 +55,9 @@ const Design: React.FC = () => {
           <div className="colFourth colThird">
             <Github className="colFifth" size={50} strokeWidth={1.25} />
           </div>
-          <p>Star this repository on <a className="colFifth" href="https://github.com/Elagoht/live-palette">Github</a>. Uhmm actually mean lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          <p>Star this repository on <a target="_blank" rel="noreferrer" href="https://github.com/Elagoht/live-palette">Github</a>.
+            Uhmm actually mean lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
         </motion.div>
         <motion.div
           variants={animPosition}
@@ -98,6 +100,15 @@ const Design: React.FC = () => {
         </aside>
       </div>
     </div>
+    <footer>
+      <div className="colThird colFourth col">
+        This web site created by <a
+          href="https://furkanbaytekin.dev"
+          target="_blank" rel="noreferrer" >Furkan Baytekin</a> a.k.a. <a
+            href="https://github.com/Elagoht"
+            target="_blank" rel="noreferrer" >Elagoht</a>.
+      </div>
+    </footer>
   </>
 }
 

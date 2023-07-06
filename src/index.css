@@ -21,6 +21,9 @@
   }
 }
 @layer components {
+  ::-webkit-scrollbar {
+    @apply h-2 w-2;
+  }
   header {
     @apply shadow-md;
   }
@@ -74,6 +77,9 @@
   }
   aside nav button {
     @apply border-b-4 p-2 shadow-md rounded-lg flex items-center gap-2 hover:scale-105 transition-transform;
+  }
+  footer > div {
+    @apply container p-4 rounded-lg border-b-4 my-4 text-center;
   }
   form > div {
     @apply flex gap-8 p-4 max-w-[1160px] mx-auto overflow-x-auto;
